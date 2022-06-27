@@ -36,3 +36,18 @@ $ go mod tidy
 go: finding module for package rsc.io/quote
 go: found rsc.io/quote in rsc.io/quote v1.5.2
 ```
+
+### Greetings
+1. Import the greetings package
+```go
+import "github.com/DanNduati/Go_learn/greetings"
+```
+This is the package contained in the hello module
+2. Get a greeting by calling the greetings package’s Hello function.
+3. Run the `go mod tidy` command to synchronize the module's dependencies
+4. Run your code:
+```bash
+$ go run .
+Hello, Daniel. Welcome!
+Don't communicate by sharing memory, share memory by communicating.
+```
