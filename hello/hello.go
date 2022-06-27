@@ -19,7 +19,7 @@ func main() {
 	log.SetFlags(0)
 
 	//get a greeting message and print it
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Daniel")
 	if err != nil {
 		//Fatal is equivalent to Print() followed by a call to os.Exit(1).
 		log.Fatal(err)
