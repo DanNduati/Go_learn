@@ -21,3 +21,18 @@ go: creating new go.mod: module example/hello
 $ go run .
 Hello, World!
 ```
+
+## Call code in an external package
+When you need your code to do something that might have been implemented by someone else, you can look for a package that has functions you can use in your code.
+
+1. Visit pkg.go.dev and search for the package.
+2. In your Go code, import the external package.
+```go
+import "rsc.io/quote"
+```
+3. Add new module requirements and sums.
+```bash
+$ go mod tidy
+go: finding module for package rsc.io/quote
+go: found rsc.io/quote in rsc.io/quote v1.5.2
+```
