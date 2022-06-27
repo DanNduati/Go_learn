@@ -1,5 +1,3 @@
-github.com/DanNduati/Go_learn/greetings v0.0.0-20220627095116-e4a551fa55ee h1:BK11uR+oQnXDcNhwMV9GJGxnq0++ylnPPh0FLZYR0mA=
-github.com/DanNduati/Go_learn/greetings v0.0.0-20220627095116-e4a551fa55ee/go.mod h1:F1B2pQp+w5PXYSGwje5qBHhd1GfrizNThXqDvD+ZXZc=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c h1:qgOY6WgZOaTkIIMiVjBQcw93ERBE4m30iBm00nkL0i8=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 rsc.io/quote v1.5.2 h1:w5fcysjrx7yqtD/aO+QwRjYZOKnaM9Uh2b40tElTs3Y=
