@@ -112,3 +112,21 @@ bmi := map[string]int{
     "height": 2,
     "weight": 64,
 }
+```
+
+## Tests
+To execute tests:
+
+```bash
+$ go test
+PASS
+ok  	github.com/DanNduati/Go_learn/greetings	0.002s
+
+$ go test -v
+=== RUN   TestHelloName
+--- PASS: TestHelloName (0.00s)
+=== RUN   TestHelloEmpty
+--- PASS: TestHelloEmpty (0.00s)
+PASS
+ok  	github.com/DanNduati/Go_learn/greetings	0.002s
+```
