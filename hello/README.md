@@ -51,3 +51,41 @@ $ go run .
 Hello, Daniel. Welcome!
 Don't communicate by sharing memory, share memory by communicating.
 ```
+
+## Compile and install the application
+1. From the hello directory run:
+```bash
+$ go build -o bin/hello
+```
+2. Run the hello executable
+```bash
+$ ./bin/hello
+$ ./bin/hello 
+Greeting for  Daniel : Hi, Daniel. Welcome!
+Greeting for  Nduati : Great to see you, Nduati!
+Greeting for  Chege : Hi, Chege. Welcome!
+Don't communicate by sharing memory, share memory by communicating.
+```
+3. Get the install path by running the go list command
+```bash
+$ go list -f '{{.Target}}'
+/home/daniel/go/bin/hello
+```
+meaning that binaries are installed to `/home/daniel/go/bin`
+
+4. Add the Go install directory to your system's shell path.
+```bash
+$ export PATH=$PATH:/home/daniel/go/bin
+```
+5. Once you've updated the shell path, run the go install command to compile and install the package.
+```bash
+$ go install
+```
+6. Run your application by simply typing its name.
+```bash
+$ hello
+Greeting for  Daniel : Hail, Daniel! Well met!
+Greeting for  Nduati : Hi, Nduati. Welcome!
+Greeting for  Chege : Hi, Chege. Welcome!
+Don't communicate by sharing memory, share memory by communicating.
+```
