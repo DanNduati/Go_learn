@@ -6,6 +6,7 @@ import (
 	"golang.org/x/example/stringutil"
 )
 
-func main(){
+func main() {
 	fmt.Println(stringutil.Reverse("Hello"))
+	fmt.Println(stringutil.ToUpper("daniel"))
 }
