@@ -35,3 +35,33 @@ $ go work init ./hello
 $ go run example.com/hello
 olleH
 ```
+
+## 3. Download and modify the golang.org/x/example module
+1. Clone the repo
+```bash
+$ git clone https://go.googlesource.com/example
+```
+2. Add the module to the workspace
+```bash
+$ go work use ./example
+```
+this command adds a new module to the go.work file. It will now look like this:
+```
+go 1.18
+
+use (
+    ./hello
+    ./example
+)
+```
+The module now includes both the example.com/hello module and the golang.org/x/example module.
+3. Add the new function.
+Implement a new ToUpper() function to uppercase a string to the golang.org/x/example/stringutil package.
+4. Modify the hello program to use the function.
+## 4. Run the code in the workspace
+From the workspace directory, run
+```bash
+$ go run example.com/hello
+olleH
+DANIEL
+```
